@@ -21,4 +21,23 @@
             <p>Fechado</p>
         </div>
     </body>
+
+    <script>
+   
+        var p = window.document.querySelector('p');
+        var classe = document.querySelector('body');
+        
+        function status(){
+            if(classe.className == 'fechado'){
+                classe.className = 'aberto';
+                p.innerText = 'aberto';
+            } else {
+                classe.className = 'fechado';
+                p.innerText = 'fechado';
+            }
+        
+        }
+        
+        p.addEventListener('click', status);
+        </script>
 </html>
